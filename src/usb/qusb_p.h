@@ -9,7 +9,7 @@
   #include <libusb.h>
   #include <hidapi.h>
 #elif defined(Q_OS_UNIX)
-  #include <libusb-1.0/libusb.h>
+  #include "libusb.h"
   #include <hidapi.h>
 #else
   #include <libusb/libusb.h>

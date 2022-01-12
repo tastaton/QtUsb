@@ -86,7 +86,7 @@ else:android {
     $$LIBUSB_ROOT_REL/libusb/sync.c \
     $$LIBUSB_ROOT_REL/libusb/strerror.c \
     $$LIBUSB_ROOT_REL/libusb/os/linux_usbfs.c \
-    $$LIBUSB_ROOT_REL/libusb/os/poll_posix.c \
+    $$LIBUSB_ROOT_REL/libusb/os/events_posix.c \
     $$LIBUSB_ROOT_REL/libusb/os/threads_posix.c \
     $$LIBUSB_ROOT_REL/libusb/os/linux_netlink.c
 
@@ -101,6 +101,7 @@ else:android {
     # Build hidapi-libusb
     HIDAPI_ROOT_REL = $$PWD/../../hidapi
     SOURCES += $$HIDAPI_ROOT_REL/libusb/hid.c
+    INCLUDEPATH += $$PWD
     INCLUDEPATH += $$HIDAPI_ROOT_REL/hidapi
 }
 

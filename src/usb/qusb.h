@@ -2,6 +2,7 @@
 #define QUSB_H
 
 #include "qusbglobal.h"
+#include <QObject>
 #include <QList>
 
 // Stupid windows conflict
